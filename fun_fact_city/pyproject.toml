@@ -1,0 +1,21 @@
+[project]
+name = "fun-fact-city"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "owaisyosuf", email = "owais.251990@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.95.0",
+    "litellm>=1.61.1",
+]
+
+[project.scripts]
+fun-fact-city = "fun_fact_city:main"
+city="fun_fact_city.fun_fact_city:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
