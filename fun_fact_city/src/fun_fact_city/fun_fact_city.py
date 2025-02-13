@@ -1,11 +1,17 @@
 from crewai.flow.flow import Flow , start, listen
 from litellm import completion
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-api_key="AIzaSyA_PbTlQ12PQwWmeClGaKou1FQ574on_S8"
+# Get API key
+api_key = os.getenv("GOOGLE_API_KEY")
+
 
 class FunFactCity(Flow):
     @start()
     def city_name(self):
+     
         result=completion(
             model="gemini/gemini-1.5-flash", 
             api_key=api_key,

@@ -663,12 +663,14 @@ source = { editable = "." }
 dependencies = [
     { name = "crewai" },
     { name = "litellm" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", specifier = ">=0.95.0" },
     { name = "litellm", specifier = ">=1.61.1" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
 ]
 
 [[package]]
