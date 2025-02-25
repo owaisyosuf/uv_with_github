@@ -1,5 +1,5 @@
 [project]
-name = "router-decorator"
+name = "router"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,12 +9,12 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "crewai>=0.102.0",
-    "litellm>=1.60.2",
+    "crewai-tools>=0.36.0",
 ]
 
 [project.scripts]
-router-decorator = "router_decorator:main"
-router="router_decorator.router:kickoff"
+router = "router:main"
+piaic="router.city_or_country:kickoff"
 
 [build-system]
 requires = ["hatchling"]
